@@ -24,7 +24,7 @@ public class PolicyController {
     public BigDecimal calculate(@ApiParam(value="Long (required)")
                                 @PathVariable  long policyId) {
 
-        log.info("calculate policy (id: " + policyId + ")");
+        log.info("calculate (policyId: " + policyId + ")");
         BigDecimal result = policyService.calculate(policyId);
         return result;
     }
@@ -34,7 +34,7 @@ public class PolicyController {
     public Policy getPolicy(@ApiParam(value="Long (required)")
                             @PathVariable  long policyId) {
 
-        log.info("getPolicy (id: " + policyId + ")");
+        log.info("getPolicy (policyId: " + policyId + ")");
         Policy result = policyService.getPolicy(policyId);
         return result;
     }
